@@ -1,0 +1,40 @@
+/* 一覧テーブルのスタイル */
+
+.table_wrap{
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+tr:hover{
+    background-color: #ebedef;
+}
+th{
+    font-size: clamp(10px,1vw,15px);
+}
+td{
+    font-size: clamp(8px,1vw,13px);
+}
+
+/* 検索バー */
+.form-group{
+    margin: 1rem auto;
+    width: 40%;
+}
+.form-control {
+    border-radius: 5rem;
+}
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}

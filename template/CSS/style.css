@@ -1,0 +1,156 @@
+/* すべてのページ共通スタイル（ナビ、メニュー等） */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar_flex{
+    display: flex;
+    min-height: 100%;
+}
+.navbar{
+    color: rgb(221, 221, 221);
+}
+
+.header_title{
+    padding: 1rem 0;
+}
+
+/* サイドメニュー */
+.sidebar{
+    width: 14rem;
+    height: 100%;
+    background-color: #4f5d73;
+}
+
+/* サイドメニューのアコーディオン */
+.accordion_title1,
+.accordion_title2,
+.accordion_title3{
+    position: relative;
+}
+
+.accordion_item1,
+.accordion_item2,
+.accordion_item3{
+    padding: 1rem ;
+}
+.accordion_item1:hover,
+.accordion_item2:hover,
+.accordion_item3:hover{
+    color: #add8e6;
+}
+
+/* アコーディオン矢印 */
+.accordion_title1::after,
+.accordion_title2::after,
+.accordion_title3::after
+{
+    border-right: solid 2px #fff;
+    border-top: solid 2px #fff;
+    content: "";
+    display: block;
+    height: 8px;
+    position: absolute;
+    right: 0;
+    top: 38%;
+    transform: rotate(45deg);
+    transition: transform .3s ease-in-out,top .3s ease-in-out;
+    width: 8px;
+}
+
+.accordion_title1.open::after,
+.accordion_title2.open::after,
+.accordion_title3.open::after
+{
+    top: 45%;
+    transform: rotate(135deg);
+}
+
+.all_wrap{
+    width: auto;
+    margin-bottom: 5rem;
+}
+/* 登録ボタン */
+.btn_color:hover{
+    background-color: #dcdddf;
+    border: 1px solid #c9c7c7;
+}
+
+/* 必須 */
+.btn_required{
+    margin-left: 10px;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background-color: #ffa500;
+}
+
+footer{
+    background-color: #dcdddf;
+  }
+@media screen and (max-width: 768px){
+
+    .sidebar, .company_logo{
+        transform: translateX(-100%);
+        position: fixed;
+        top: 0;
+    }
+
+    .all_wrap{
+        margin: 1rem;
+    }
+
+    footer{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px){
+
+    .sidebar{
+        transform: translateX(0);
+        position: fixed;
+        top: 0; 
+    }
+    .company_logo{
+        width: 10rem;
+        height: auto;
+        margin: 1rem 0;
+        padding-left: 1.5rem;
+    }
+
+    .company_logo img{
+        object-fit:contain;
+        width: 100%;
+        height: 100%;
+    }
+
+    .sidebar_contents{
+        margin: 1.5rem;
+        padding: 0;
+        list-style: none;
+        height: 85%;
+    }
+
+    .sidebar_contents a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    /*navとメイン横並び  */
+    .all_wrap{
+        margin-left: 16rem;
+        margin-right: 2rem;
+    }
+
+    footer{
+        background-color: #dcdddf;
+        margin-left: 14rem;
+        width: calc(100% - 14rem);
+    }
+}
+

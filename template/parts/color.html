@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <!-- CSS -->
+        <link href="../CSS/style.css" rel="stylesheet"  type="text/css">
+        <link href="../CSS/color.css" rel="stylesheet"  type="text/css">
+        <link rel="stylesheet" href="../CSS/all.css" type="text/css">
+        <!-- JS -->
+        <script src="../js/script.js"></script>
+    </head>
+    <body class="w-auto h-100">
+         <!-- Side Navbar-->
+         <div class="sidebar">
+            <nav class="navbar-dark h-100 d-flex flex-column text-white">
+                <!-- 会社名、ロゴ等 -->
+                <div class="company_logo">
+                    <img src="../img/company_logo.png" alt="companyLogo">
+                </div>
+
+                <div class=" h-100">
+                    <ul class="sidebar_contents flex-column mb-auto">
+                        <div class="py-3">
+                            <a href="../home.html">
+                                <li>HOME</li>
+                            </a>
+                        </div>
+                        
+                        <div class="py-3 accordion_title1"> 
+                            <li >登録</li>
+                        </div>
+
+                        <div class="accordion_item1">
+                            <a href="../login.html">
+                                <li>ログイン</li>
+                            </a>
+                        </div>
+
+                        <div class="accordion_item1">
+                            <a href="../user_register.html" >
+                                <li>ユーザ情報登録</li>
+                            </a>
+                        </div>
+                        <div class="accordion_item1">    
+                            <a href="../product_register.html">
+                                <li>商品登録</li>
+                            </a>
+                        </div>
+                        <div class="py-3 accordion_title2">
+                                <li>一覧</li>
+                        </div>
+                        <div class="accordion_item2">
+                            <a href="../product_list.html">
+                                <li>商品一覧</li>
+                            </a>
+                        </div>
+                        <div class="accordion_item2">
+                            <a href="../product_detail.html">
+                                <li>商品詳細</li>
+                            </a>
+                        </div>
+                        <div class="accordion_item2">
+                            <a href="../user_list.html">
+                                <li>ユーザ一覧</li>
+                            </a>
+                        </div>   
+                        <div class="accordion_item2">
+                            <a href="../user_detail.html">
+                                <li>ユーザ一覧</li>
+                            </a>
+                        </div>            
+                        <div class="py-3 accordion_title3"> 
+                                <li>パーツ</li>
+                        </div>
+                        <div  class="accordion_item3">
+                            <a href="font.html">
+                                <li>フォント</li>
+                            </a>
+                        </div>
+                        <div  class="accordion_item3">
+                            <a href="color.html">
+                                <li>色</li>
+                            </a>
+                        </div>
+                        <div  class="accordion_item3">
+                            <a href="button.html">
+                                <li>ボタン</li>
+                            </a>
+                        </div>
+                        <div  class="accordion_item3">
+                            <a href="list.html">
+                                <li>リスト・テーブル</li>
+                            </a>
+                        </div>
+                    </ul>
+                
+                    <div class="border-top border-white mx-3">
+                        <div class="my-3">
+                            <a href="#" class="text-decoration-none text-white">
+                                ログアウト
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="#" class="text-decoration-none text-white">
+                                マイページ
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- ナビ以外すべて囲む -->
+        <div class="all_wrap">
+            <!-- ヘッダー -->
+            <header>
+                <div class="header_title">
+                    <a href="user_register.html" class="text-decoration-none text-dark"><h1>色</h1></a>  
+                </div>
+            </header>
+
+            <!-- マテリアルカラー -->
+            <h3 class="ms-3">マテリアルカラー</h3>
+            <!-- fontawesome矢印 -->
+            <i class="fa-solid fa-arrow-right ms-3"></i>
+            <a href="https://m2.material.io/inline-tools/color/" class="ms-1 color_picLink">こちらでメイン色を選ぶと配色を自動で決められます</a>
+            <div class="material">
+                <div class="color_type_m">
+                    <div class="color_title">Red</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 235, 238);">50</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 205, 210);">100</div>
+                    <div class="color_box_m" style="background-color: rgb(239, 154, 154);">200</div>
+                    <div class="color_box_m" style="background-color: rgb(229, 115, 115);">300</div>
+                    <div class="color_box_m" style="background-color: rgb(239, 83, 80);">400</div>
+                    <div class="color_box_m" style="background-color: rgb(244, 67, 54);">500</div>
+                    <div class="color_box_m" style="background-color: rgb(229, 57, 53);">600</div>
+                    <div class="color_box_m" style="background-color: rgb(211, 47, 47);">700</div>
+                    <div class="color_box_m" style="background-color: rgb(198, 40, 40);">800</div>
+                    <div class="color_box_m" style="background-color: rgb(183, 28, 28);">900</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 138, 128);">A100</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 82, 82);">A200</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 23, 68);">A400</div>
+                    <div class="color_box_m" style="background-color: rgb(213, 0, 0);">A700</div>
+                </div>
+
+                <div class="color_type_m">
+                    <p class="color_title">Pink</p>
+                    <div class="color_box_m" style="background-color: rgb(252, 228, 236);">50</div>
+                    <div class="color_box_m" style="background-color: rgb(248, 187, 208);">100</div>
+                    <div class="color_box_m" style="background-color: rgb(244, 143, 177);">200</div>
+                    <div class="color_box_m" style="background-color: rgb(240, 98, 146);">300</div>
+                    <div class="color_box_m" style="background-color: rgb(236, 64, 122);">400</div>
+                    <div class="color_box_m" style="background-color: rgb(233, 30, 99);">500</div>
+                    <div class="color_box_m" style="background-color: rgb(216, 27, 96);">600</div>
+                    <div class="color_box_m" style="background-color: rgb(194, 24, 91);">700</div>
+                    <div class="color_box_m" style="background-color: rgb(173, 20, 87);">800</div>
+                    <div class="color_box_m" style="background-color: rgb(136, 14, 79);">900</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 128, 171);">A100</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 64, 129);">A200</div>
+                    <div class="color_box_m" style="background-color: rgb(245, 0, 87);">A400</div>
+                    <div class="color_box_m" style="background-color: rgb(197, 17, 98);">A700</div>
+                </div>
+
+                <div class="color_type_m">
+                    <p class="color_title">Purple</p>
+                    <div class="color_box_m" style="background-color: rgb(243, 229, 245);">50</div>
+                    <div class="color_box_m" style="background-color: rgb(225, 190, 231);">100</div>
+                    <div class="color_box_m" style="background-color: rgb(206, 147, 216);">200</div>
+                    <div class="color_box_m" style="background-color: rgb(186, 104, 200);">300</div>
+                    <div class="color_box_m" style="background-color: rgb(171, 71, 188);">400</div>
+                    <div class="color_box_m" style="background-color: rgb(156, 39, 176);">500</div>
+                    <div class="color_box_m" style="background-color: rgb(142, 36, 170);">600</div>
+                    <div class="color_box_m" style="background-color: rgb(123, 31, 162);">700</div>
+                    <div class="color_box_m" style="background-color: rgb(106, 27, 154);">800</div>
+                    <div class="color_box_m" style="background-color: rgb(74, 20, 140);">900</div>
+                    <div class="color_box_m" style="background-color: rgb(234, 128, 252);">A100</div>
+                    <div class="color_box_m" style="background-color: rgb(224, 64, 251);">A200</div>
+                    <div class="color_box_m" style="background-color: rgb(213, 0, 249);">A400</div>
+                    <div class="color_box_m" style="background-color: rgb(170, 0, 255);">A700</div>
+                </div>
+                
+                <div class="color_type_m">
+                    <p class="color_title">Deep Purple</p>
+                    <div class="color_box_m" style="background-color: rgb(237, 231, 246);">50</div>
+                    <div class="color_box_m" style="background-color: rgb(209, 196, 233);">100</div>
+                    <div class="color_box_m" style="background-color: rgb(179, 157, 219);">200</div>
+                    <div class="color_box_m" style="background-color: rgb(149, 117, 205);">300</div>
+                    <div class="color_box_m" style="background-color: rgb(126, 87, 194);">400</div>
+                    <div class="color_box_m" style="background-color: rgb(103, 58, 183);">500</div>
+                    <div class="color_box_m" style="background-color: rgb(94, 53, 177);">600</div>
+                    <div class="color_box_m" style="background-color: rgb(81, 45, 168);">700</div>
+                    <div class="color_box_m" style="background-color: rgb(69, 39, 160);">800</div>
+                    <div class="color_box_m" style="background-color: rgb(49, 27, 146);">900</div>
+                    <div class="color_box_m" style="background-color: rgb(179, 136, 255);">A100</div>
+                    <div class="color_box_m" style="background-color: rgb(124, 77, 255);">A200</div>
+                    <div class="color_box_m" style="background-color: rgb(101, 31, 255);">A400</div>
+                    <div class="color_box_m" style="background-color: rgb(98, 0, 234);">A700</div>
+                </div>
+                <div class="color_type_m">
+                    <p class="color_title">indigo</p>
+                    <div class="color_box_m" style="background-color: rgb(232, 234, 246);">50</div>
+                    <div class="color_box_m" style="background-color: rgb(197, 202, 233);">100</div>
+                    <div class="color_box_m" style="background-color: rgb(159, 168, 218);">200</div>
+                    <div class="color_box_m" style="background-color: rgb(121, 134, 203);">300</div>
+                    <div class="color_box_m" style="background-color: rgb(92, 107, 192);">400</div>
+                    <div class="color_box_m" style="background-color: rgb(63, 81, 181);">500</div>
+                    <div class="color_box_m" style="background-color: rgb(57, 73, 171);">600</div>
+                    <div class="color_box_m" style="background-color: rgb(48, 63, 159);">700</div>
+                    <div class="color_box_m" style="background-color: rgb(40, 53, 147);">800</div>
+                    <div class="color_box_m" style="background-color: rgb(26, 35, 126);">900</div>
+                    <div class="color_box_m" style="background-color: rgb(140, 158, 255);">A100</div>
+                    <div class="color_box_m" style="background-color: rgb(83, 109, 254);">A200</div>
+                    <div class="color_box_m" style="background-color: rgb(61, 90, 254);">A400</div>
+                    <div class="color_box_m" style="background-color: rgb(48, 79, 254);">A700</div>
+                </div>
+                <div class="color_type_m">
+                    <p class="color_title">Blue</p>
+                    <div class="color_box_m" style="background-color: rgb(227, 242, 253);">50</div>
+                    <div class="color_box_m" style="background-color: rgb(187, 222, 251);">100</div>
+                    <div class="color_box_m" style="background-color: rgb(144, 202, 249);">200</div>
+                    <div class="color_box_m" style="background-color: rgb(100, 181, 246);">300</div>
+                    <div class="color_box_m" style="background-color: rgb(66, 165, 245);">400</div>
+                    <div class="color_box_m" style="background-color: rgb(33, 150, 243);">500</div>
+                    <div class="color_box_m" style="background-color: rgb(30, 136, 229);">600</div>
+                    <div class="color_box_m" style="background-color: rgb(25, 118, 210);">700</div>
+                    <div class="color_box_m" style="background-color: rgb(21, 101, 192);">800</div>
+                    <div class="color_box_m" style="background-color: rgb(13, 71, 161);">900</div>
+                    <div class="color_box_m" style="background-color: rgb(130, 177, 255);">A100</div>
+                    <div class="color_box_m" style="background-color: rgb(68, 138, 255);">A200</div>
+                    <div class="color_box_m" style="background-color: rgb(41, 121, 255);">A400</div>
+                    <div class="color_box_m" style="background-color: rgb(41, 98, 255);">A700</div>
+                </div>
+                <div class="color_type_m">
+                    <p class="color_title">Light Blue</p>
+                    <div class="color_box_m" style="background-color: rgb(225, 245, 254);">50</div>
+                    <div class="color_box_m" style="background-color: rgb(179, 229, 252);">100</div>
+                    <div class="color_box_m" style="background-color: rgb(129, 212, 250);">200</div>
+                    <div class="color_box_m" style="background-color: rgb(79, 195, 247);">300</div>
+                    <div class="color_box_m" style="background-color: rgb(41, 182, 246);">400</div>
+                    <div class="color_box_m" style="background-color: rgb(3, 169, 244);">500</div>
+                    <div class="color_box_m" style="background-color: rgb(3, 155, 229);">600</div>
+                    <div class="color_box_m" style="background-color: rgb(2, 136, 209);">700</div>
+                    <div class="color_box_m" style="background-color: rgb(2, 119, 189);">800</div>
+                    <div class="color_box_m" style="background-color: rgb(1, 87, 155);">900</div>
+                    <div class="color_box_m" style="background-color: rgb(128, 216, 255);">A100</div>
+                    <div class="color_box_m" style="background-color: rgb(64, 196, 255);">A200</div>
+                    <div class="color_box_m" style="background-color: rgb(0, 176, 255);">A400</div>
+                    <div class="color_box_m" style="background-color: rgb(0, 145, 234);">A700</div>
+                </div>
+                <div class="color_type_m">
+                    <p class="color_title">Cyan</p>
+                    <div class="color_box_m" style="background-color: rgb(224, 247, 250);">50</div>
+                    <div class="color_box_m" style="background-color: rgb(178, 235, 242);">100</div>
+                    <div class="color_box_m" style="background-color: rgb(128, 222, 234);">200</div>
+                    <div class="color_box_m" style="background-color: rgb(77, 208, 225);">300</div>
+                    <div class="color_box_m" style="background-color: rgb(38, 198, 218);">400</div>
+                    <div class="color_box_m" style="background-color: rgb(0, 188, 212);">500</div>
+                    <div class="color_box_m" style="background-color: rgb(0, 172, 193);">600</div>
+                    <div class="color_box_m" style="background-color: rgb(0, 151, 167);">700</div>
+                    <div class="color_box_m" style="background-color: rgb(0, 131, 143);">800</div>
+                    <div class="color_box_m" style="background-color: rgb(0, 96, 100);">900</div>
+                    <div class="color_box_m" style="background-color: rgb(132, 255, 255);">A100</div>
+                    <div class="color_box_m" style="background-color: rgb(24, 255, 255);">A200</div>
+                    <div class="color_box_m" style="background-color: rgb(0, 229, 255);">A400</div>
+                    <div class="color_box_m" style="background-color: rgb(0, 184, 212);">A700</div>
+                </div>
+
+                <div class="color_type_m">
+                    <p class="color_title">Teal</p>
+                    <div class="color_box_m" style="background-color: rgb(224, 242, 241);">50</div>
+                    <div class="color_box_m" style="background-color: rgb(178, 223, 219);">100</div>
+                    <div class="color_box_m" style="background-color: rgb(128, 203, 196);">200</div>
+                    <div class="color_box_m" style="background-color: rgb(77, 182, 172);">300</div>
+                    <div class="color_box_m" style="background-color: rgb(38, 166, 154);">400</div>
+                    <div class="color_box_m" style="background-color: rgb(0, 150, 136);">500</div>
+                    <div class="color_box_m" style="background-color: rgb(0, 137, 123);">600</div>
+                    <div class="color_box_m" style="background-color: rgb(0, 121, 107);">700</div>
+                    <div class="color_box_m" style="background-color: rgb(0, 105, 92);">800</div>
+                    <div class="color_box_m" style="background-color: rgb(0, 77, 64);">900</div>
+                    <div class="color_box_m" style="background-color: rgb(167, 255, 235);">A100</div>
+                    <div class="color_box_m" style="background-color: rgb(100, 255, 218);">A200</div>
+                    <div class="color_box_m" style="background-color: rgb(29, 233, 182);">A400</div>
+                    <div class="color_box_m" style="background-color: rgb(0, 191, 165);">A700</div>
+                </div>
+
+                <div class="color_type_m">
+                    <p class="color_title">Green</p>
+                    <div class="color_box_m" style="background-color: rgb(232, 245, 233);">50</div>
+                    <div class="color_box_m" style="background-color: rgb(200, 230, 201);">100</div>
+                    <div class="color_box_m" style="background-color: rgb(165, 214, 167);">200</div>
+                    <div class="color_box_m" style="background-color: rgb(129, 199, 132);">300</div>
+                    <div class="color_box_m" style="background-color: rgb(102, 187, 106);">400</div>
+                    <div class="color_box_m" style="background-color: rgb(76, 175, 80);">500</div>
+                    <div class="color_box_m" style="background-color: rgb(67, 160, 71);">600</div>
+                    <div class="color_box_m" style="background-color: rgb(56, 142, 60);">700</div>
+                    <div class="color_box_m" style="background-color: rgb(46, 125, 50);">800</div>
+                    <div class="color_box_m" style="background-color: rgb(27, 94, 32);">900</div>
+                    <div class="color_box_m" style="background-color: rgb(185, 246, 202);">A100</div>
+                    <div class="color_box_m" style="background-color: rgb(105, 240, 174);">A200</div>
+                    <div class="color_box_m" style="background-color: rgb(0, 230, 118);">A400</div>
+                    <div class="color_box_m" style="background-color: rgb(0, 200, 83);">A700</div>
+                </div>
+
+                <div class="color_type_m">
+                    <p class="color_title">Light Green</p>
+                    <div class="color_box_m" style="background-color: rgb(241, 248, 233);">50</div>
+                    <div class="color_box_m" style="background-color: rgb(220, 237, 200);">100</div>
+                    <div class="color_box_m" style="background-color: rgb(197, 225, 165);">200</div>
+                    <div class="color_box_m" style="background-color: rgb(174, 213, 129);">300</div>
+                    <div class="color_box_m" style="background-color: rgb(156, 204, 101);">400</div>
+                    <div class="color_box_m" style="background-color: rgb(139, 195, 74);">500</div>
+                    <div class="color_box_m" style="background-color: rgb(124, 179, 66);">600</div>
+                    <div class="color_box_m" style="background-color: rgb(104, 159, 56);">700</div>
+                    <div class="color_box_m" style="background-color: rgb(85, 139, 47);">800</div>
+                    <div class="color_box_m" style="background-color: rgb(51, 105, 30);">900</div>
+                    <div class="color_box_m" style="background-color: rgb(204, 255, 144);">A100</div>
+                    <div class="color_box_m" style="background-color: rgb(178, 255, 89);">A200</div>
+                    <div class="color_box_m" style="background-color: rgb(118, 255, 3);">A400</div>
+                    <div class="color_box_m" style="background-color: rgb(100, 221, 23);">A700</div>
+                </div>
+
+                <div class="color_type_m">
+                    <p class="color_title">Lime</p>
+                    <div class="color_box_m" style="background-color: rgb(249, 251, 231);">50</div>
+                    <div class="color_box_m" style="background-color: rgb(240, 244, 195);">100</div>
+                    <div class="color_box_m" style="background-color: rgb(230, 238, 156);">200</div>
+                    <div class="color_box_m" style="background-color: rgb(220, 231, 117);">300</div>
+                    <div class="color_box_m" style="background-color: rgb(212, 225, 87);">400</div>
+                    <div class="color_box_m" style="background-color: rgb(205, 220, 57);">500</div>
+                    <div class="color_box_m" style="background-color: rgb(192, 202, 51);">600</div>
+                    <div class="color_box_m" style="background-color: rgb(175, 180, 43);">700</div>
+                    <div class="color_box_m" style="background-color: rgb(158, 157, 36);">800</div>
+                    <div class="color_box_m" style="background-color: rgb(130, 119, 23);">900</div>
+                    <div class="color_box_m" style="background-color: rgb(244, 255, 129);">A100</div>
+                    <div class="color_box_m" style="background-color: rgb(238, 255, 65);">A200</div>
+                    <div class="color_box_m" style="background-color: rgb(198, 255, 0);">A400</div>
+                    <div class="color_box_m" style="background-color: rgb(174, 234, 0);">A700</div>
+                </div>
+
+                <div class="color_type_m">
+                    <p class="color_title">Yellow</p>
+                    <div class="color_box_m" style="background-color: rgb(255, 253, 231);">50</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 249, 196);">100</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 245, 157);">200</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 241, 118);">300</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 238, 88);">400</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 235, 59);">500</div>
+                    <div class="color_box_m" style="background-color: rgb(253, 216, 53);">600</div>
+                    <div class="color_box_m" style="background-color: rgb(251, 192, 45);">700</div>
+                    <div class="color_box_m" style="background-color: rgb(249, 168, 37);">800</div>
+                    <div class="color_box_m" style="background-color: rgb(245, 127, 23);">900</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 255, 141);">A100</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 255, 0);">A200</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 234, 0);">A400</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 214, 0);">A700</div>
+                </div>
+
+                <div class="color_type_m">
+                    <p class="color_title">Amber</p>
+                    <div class="color_box_m" style="background-color: rgb(255, 248, 225);">50</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 236, 179);">100</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 224, 130);">200</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 213, 79);">300</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 202, 40);">400</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 193, 7);">500</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 179, 0);">600</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 160, 0);">700</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 143, 0);">800</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 111, 0);">900</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 229, 127);">A100</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 215, 64);">A200</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 196, 0);">A400</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 171, 0);">A700</div>
+                </div>
+
+                <div class="color_type_m">
+                    <p class="color_title">Orange</p>
+                    <div class="color_box_m" style="background-color: rgb(255, 243, 224);">50</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 224, 178);">100</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 204, 128);">200</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 183, 77);">300</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 167, 38);">400</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 152, 0);">500</div>
+                    <div class="color_box_m" style="background-color: rgb(251, 140, 0);">600</div>
+                    <div class="color_box_m" style="background-color: rgb(245, 124, 0);">700</div>
+                    <div class="color_box_m" style="background-color: rgb(239, 108, 0);">800</div>
+                    <div class="color_box_m" style="background-color: rgb(230, 81, 0);">900</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 209, 128);">A100</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 171, 64);">A200</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 145, 0);">A400</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 109, 0);">A700</div>
+                </div>
+                <div class="color_type_m">
+                    <p class="color_title">Deep Orange</p>
+                    <div class="color_box_m" style="background-color: rgb(251, 233, 231);">50</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 204, 188);">100</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 171, 145);">200</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 138, 101);">300</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 112, 67);">400</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 87, 34);">500</div>
+                    <div class="color_box_m" style="background-color: rgb(244, 81, 30);">600</div>
+                    <div class="color_box_m" style="background-color: rgb(230, 74, 25);">700</div>
+                    <div class="color_box_m" style="background-color: rgb(216, 67, 21);">800</div>
+                    <div class="color_box_m" style="background-color: rgb(191, 54, 12);">900</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 158, 128);">A100</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 110, 64);">A200</div>
+                    <div class="color_box_m" style="background-color: rgb(255, 61, 0);">A400</div>
+                    <div class="color_box_m" style="background-color: rgb(221, 44, 0);">A700</div>
+                </div>
+                <div class="color_type_m">
+                    <p class="color_title">Brown</p>
+                    <div class="color_box_m" style="background-color: rgb(239, 235, 233);">50</div>
+                    <div class="color_box_m" style="background-color: rgb(215, 204, 200);">100</div>
+                    <div class="color_box_m" style="background-color: rgb(188, 170, 164);">200</div>
+                    <div class="color_box_m" style="background-color: rgb(161, 136, 127);">300</div>
+                    <div class="color_box_m" style="background-color: rgb(141, 110, 99);">400</div>
+                    <div class="color_box_m" style="background-color: rgb(121, 85, 72);">500</div>
+                    <div class="color_box_m" style="background-color: rgb(109, 76, 65);">600</div>
+                    <div class="color_box_m" style="background-color: rgb(93, 64, 55);">700</div>
+                    <div class="color_box_m" style="background-color: rgb(78, 52, 46);">800</div>
+                    <div class="color_box_m" style="background-color: rgb(62, 39, 35);">900</div>
+                </div>
+                <div class="color_type_m">
+                    <p class="color_title">Gray</p>
+                    <div class="color_box_m" style="background-color: rgb(250, 250, 250);">50</div>
+                    <div class="color_box_m" style="background-color: rgb(245, 245, 245);">100</div>
+                    <div class="color_box_m" style="background-color: rgb(238, 238, 238);">200</div>
+                    <div class="color_box_m" style="background-color: rgb(224, 224, 224);">300</div>
+                    <div class="color_box_m" style="background-color: rgb(224, 224, 224);">400</div>
+                    <div class="color_box_m" style="background-color: rgb(158, 158, 158);">500</div>
+                    <div class="color_box_m" style="background-color: rgb(117, 117, 117);">600</div>
+                    <div class="color_box_m" style="background-color: rgb(97, 97, 97);">700</div>
+                    <div class="color_box_m" style="background-color: rgb(66, 66, 66);">800</div>
+                    <div class="color_box_m" style="background-color: rgb(33, 33, 33);">900</div>
+                </div>
+
+                <div class="color_type_m">
+                    <p class="color_title">Blue Gray</p>
+                    <div class="color_box_m" style="background-color: rgb(236, 239, 241);">50</div>
+                    <div class="color_box_m" style="background-color: rgb(207, 216, 220);">100</div>
+                    <div class="color_box_m" style="background-color: rgb(176, 190, 197);">200</div>
+                    <div class="color_box_m" style="background-color: rgb(144, 164, 174);">300</div>
+                    <div class="color_box_m" style="background-color: rgb(120, 144, 156);">400</div>
+                    <div class="color_box_m" style="background-color: rgb(96, 125, 139);">500</div>
+                    <div class="color_box_m" style="background-color: rgb(84, 110, 122);">600</div>
+                    <div class="color_box_m" style="background-color: rgb(69, 90, 100);">700</div>
+                    <div class="color_box_m" style="background-color: rgb(55, 71, 79);">800</div>
+                    <div class="color_box_m" style="background-color: rgb(38, 50, 56);">900</div>
+                </div>
+            </div>
+
+            <div class="mb-5">
+                <h3 class="ms-3">洋色</h3>
+                 <!-- fontawesome矢印 -->
+                <i class="fa-solid fa-arrow-right ms-3"></i>
+                <a class="color_link" href="https://www.colordic.org/y">こちらから抜粋</a>
+                <div class="color_box_wrap mt-1">
+                    <div class="midnightblue color_box">ミッドナイトブルー</div>
+                    <div class="navy_blue color_box">ネイビーブルー</div>
+                    <div class="navy color_box">ネイビー</div>
+                    <div class="oriental_blue color_box">オリエンタルブルー</div>
+                    <div class="blue color_box">ブルー</div>
+                    <div class="madonna_blue color_box">マドンナブルー</div>
+                    <div class="cerulean_blue color_box">セルリアンブルー</div>
+                    <div class="turquoise_blue color_box">ターコイズブルー</div>
+                    <div class="chalk_blue color_box">チョークブルー</div>
+                    <div class="pastel_blue color_box">パステルブルー</div>
+                    <div class="cambridge_blue color_box">ケンブリッジブルー</div>
+                    <div class="summer_shower color_box">サマーシャワー</div>
+                    <div class="light_blue color_box">ライトブルー</div>
+                    <div class="pastel_blue2 color_box">パステルブルー</div>
+                </div>
+
+                <div class="color_box_wrap"> 
+                    <div class="dark_green color_box">ダークグリーン</div>
+                    <div class="teal_green color_box">テールグリーン</div>
+                    <div class="slate_green color_box">スレートグリーン</div>
+                    <div class="green color_box">グリーン</div>
+                    <div class="cactus color_box">カクタス</div>
+                    <div class="cobalt_green color_box">コバルトグリーン</div>
+                    <div class="peacock_green color_box">ピーコックグリーン</div>
+                    <div class="meadow_green color_box">メドウグリーン</div>
+                    <div class="mediumspringgreen color_box">ミディアム・スプリンググリーン</div>
+                    <div class="mint_green color_box">ミントグリーン</div>
+                    <div class="apple_green color_box">アップルグリーン</div>
+                    <div class="spray_green color_box">スプレイグリーン</div>
+                    <div class="water_green color_box">ウォーターグリーン</div>
+                    <div class="aqua_green color_box">アクアグリーン</div>
+                </div>
+
+                <div class="color_box_wrap">
+                    <div class="yellow_ocher color_box">イエローオーカー</div>
+                    <div class="pumpkin color_box">パンプキン</div>
+                    <div class="orange color_box">オレンジ</div>
+                    <div class="marigold color_box">マリーゴールド</div> 
+                    <div class="golden_yellow color_box">ゴールデンイエロー</div>
+                    <div class="saffron_yellow color_box">サフランイエロー</div>
+                    <div class="peach color_box">サフランイエロー</div>
+                    <div class="chrome_yellow color_box">クロムイエロー</div>
+                    <div class="yellow color_box">イエロー</div>
+                    <div class="gold color_box">ゴールド</div>
+                    <div class="straw color_box">ストロー</div>
+                    <div class="mimosa color_box">ミモザ</div>
+                    <div class="limelight color_box">ライムライト</div>
+                    <div class="cream_yellow color_box">クリームイエロー</div>
+                </div>
+
+                <div class="color_box_wrap">
+                    <div class="scarlet color_box">スカーレット</div>
+                    <div class="red color_box">レッド</div>
+                    <div class="tomato color_box">トマトレッド</div>
+                    <div class="poppy_red color_box">ポピーレッド</div>
+                    <div class= "strawberry color_box">ストロベリー</div>
+                    <div class="rose color_box">ローズ</div>
+                    <div class="coral_red color_box">コーラルレッド</div>
+                    <div class="cherry_pink color_box">チェリーピンク</div>
+                    <div class="rose_pink color_box">ローズピンク</div>
+                    <div class="pink color_box">ピンク</div>
+                    <div class="pink_almond color_box">ピンクアーモンド</div>
+                    <div class="rosedragee color_box">ローズドラジェ</div>
+                    <div class="pastel_pink color_box">パステルピンク</div>
+                    <div class="powder_pink color_box">パウダーピンク</div>
+                </div>
+
+                <div class="color_box_wrap">
+                    <div class="deep_royal_purple color_box">ディープロイヤルパープル</div>
+                    <div class="violet color_box">バイオレット</div>
+                    <div class="plum color_box">プラム</div>
+                    <div class="grape color_box">グレープ</div>
+                    <div class="royal_purple color_box">ロイヤルパープル</div>
+                    <div class="mauve color_box">モーブ</div>
+                    <div class="purple color_box">パープル</div>
+                    <div class="heliotrope color_box">ヘリオトロープ</div>
+                    <div class="crocus color_box">クロッカス</div>
+                    <div class="blue_lavender color_box">ブルーラベンダー</div>
+                    <div class="lavender color_box">ラベンダー</div>
+                    <div class="iris color_box">アイリス</div>
+                    <div class="lilac color_box">ライラック</div>
+                    <div class="pastel_purple color_box">パステルパープル</div>
+                </div>
+                
+                <div class="color_box_wrap">
+                    <div class="charcoal_grey color_box">チャコールグレイ</div>
+                    <div class="slate_grey color_box">スレートグレイ</div>
+                    <div class="grey color_box">グレイ</div>
+                    <div class="dove_grey color_box">ダブグレイ</div>
+                    <div class="rose_grey color_box">ローズグレイ</div>
+                    <div class="ash_grey color_box">アッシュグレイ</div>
+                    <div class="french_grey color_box">フレンチグレイ</div>
+                    <div class="lavender_grey color_box">ラベンダーグレイ</div>
+                    <div class="storm_grey color_box">ストームグレイ</div>
+                    <div class="sky_grey color_box">スカイグレイ</div>
+                    <div class="moon_grey color_box">ムーングレイ</div>
+                    <div class="oyster_white color_box">オイスターホワイト</div>
+                    <div class="frosty_white color_box">フロスティホワイト</div>
+                    <div class="silver_white color_box">シルバーホワイト</div>
+                </div>
+
+                <h3 class="ms-3">和色</h3>
+                 <!-- fontawesome矢印 -->
+                <i class="fa-solid fa-arrow-right ms-3"></i>
+                <a class="color_link" href="https://www.colordic.org/w">こちらから抜粋</a>
+                <div class="color_box_wrap mt-1">
+                    <div class="konjo color_box">紺青</div>
+                    <div class="ai color_box">藍色</div>
+                    <div class="gunjo color_box">群青</div>
+                    <div class="ruri color_box">瑠璃色</div>
+                    <div class="konpeki color_box">紺碧</div>
+                    <div class="nando color_box">納戸</div>
+                    <div class="ao color_box">青</div>
+                    <div class="ama color_box">天色</div>
+                    <div class="shinbashi color_box">新橋色</div>
+                    <div class="byakugun color_box">白群</div>
+                    <div class="aohuji color_box">青藤色</div>
+                    <div class="wasurenagusa color_box">勿忘草色</div>
+                    <div class="sora color_box">空色</div>
+                    <div class="mizu color_box">水色</div>
+                </div>
+
+                <div class="color_box_wrap"> 
+                    <div class="hukamidori color_box">深緑</div>
+                    <div class="moegi color_box">もえぎ色</div>
+                    <div class="tokiwa color_box">常盤色</div>
+                    <div class="tokiwa_midori color_box">常盤緑</div>
+                    <div class="hanarokusho color_box">花緑青</div>
+                    <div class="aomidori color_box">青緑</div>
+                    <div class="midori color_box">緑</div>
+                    <div class="wakatake color_box">若竹色</div>
+                    <div class="seji color_box">青磁色</div>
+                    <div class="usumoegi color_box">淡萌黄</div>
+                    <div class="moeki color_box">萌黄</div>
+                    <div class="wakaba color_box">若葉</div>
+                    <div class="wakamidori color_box">若緑</div>
+                    <div class="usumoegi2 color_box">薄萌黄</div>
+                    
+                </div>
+
+                <div class="color_box_wrap">
+                    <div class="syu color_box">朱色</div>
+                    <div class="ninjin color_box">人参色</div>
+                    <div class="daidai color_box">橙色</div>
+                    <div class="kaki color_box">柿色</div>
+                    <div class="mikan color_box">みかん色</div>
+                    <div class="kouji color_box">柑子色</div>
+                    <div class="anzu color_box">杏色</div>
+                    <div class="yamabuki color_box">山吹色</div>
+                    <div class="himawari color_box">ひまわり色</div>
+                    <div class="ki color_box">黄色</div>
+                    <div class="kanaria color_box">金糸雀色</div>
+                    <div class="kihada color_box">黄はだ色</div>
+                    <div class="honey color_box">はちみつ色</div>
+                    <div class="tankou color_box">淡黄</div>
+                </div>
+
+                <div class="color_box_wrap">
+                    <div class="akane color_box">茜色</div>
+                    <div class="kokihi color_box">深緋</div>
+                    <div class="hiiro color_box">緋色</div>
+                    <div class="aka color_box">赤</div>
+                    <div class="akabeni color_box">赤紅</div>
+                    <div class="bara color_box">薔薇</div>
+                    <div class="maso color_box">真朱</div>
+                    <div class="chousyun color_box">長春色</div>
+                    <div class="botan color_box">牡丹</div>
+                    <div class="momohana color_box">桃花色</div>
+                    <div class="momo color_box">桃色</div>
+                    <div class="sango color_box">珊瑚</div>
+                    <div class="nadeshiko color_box">撫子色</div>
+                    <div class="niji color_box">虹色</div>
+                </div>
+
+                <div class="color_box_wrap">
+                    <div class="honmurasaki color_box">本紫</div>
+                    <div class="shoubu color_box">菖蒲色</div>
+                    <div class="benikikyo color_box">紅桔梗</div>
+                    <div class="hujinando color_box">藤納戸</div>
+                    <div class="sumire color_box">すみれ</div>
+                    
+                    <div class="murasaki color_box">紫</div>
+                    <div class="kodai_murasaki color_box">古代紫</div>
+                    <div class="beni_murasaki color_box">紅紫</div>
+                    <div class="ayame color_box">あやめ</div>
+                    <div class="hasita color_box">半色</div>
+                    <div class="usubudou color_box">薄ぶどう</div>
+                    <div class="huji color_box">藤</div>
+                    <div class="shirahuji color_box">白藤</div>
+                    <div class="murasaki_suisho color_box">紫水晶</div>
+                </div>
+            </div>
+        </div>
+        <!-- フッター -->
+        <footer class="position-relative bottom-0">
+            <div class="d-flex w-auto justify-content-end">
+                <div class=" px-3 py-3">
+                    プライバシーポリシー
+                </div>
+                <div class=" px-3 py-3">
+                    利用規約
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <!-- CSS -->
+        <link href="css/style.css" rel="stylesheet"  type="text/css">
+        <link href="css/home.css" rel="stylesheet"  type="text/css">
+        <!-- JS -->
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+            <!-- Side Navbar-->
+            <div class="sidebar">
+                <nav class="navbar-dark h-100 d-flex flex-column text-white">
+                    <!-- 会社名、ロゴ等 -->
+                    <div class="company_logo">
+                        <img src="img/company_logo.png" alt="companyLogo">
+                    </div>
+                    
+                    <div class=" h-100">
+                        <ul class="sidebar_contents flex-column mb-auto">
+                            <div class="py-3">
+                                <a href="home.html">
+                                    <li>HOME</li>
+                                </a>
+                            </div>
+                            
+                            <div class="py-3 accordion_title1"> 
+                                <li >登録</li>
+                            </div>
+
+                            <div class="accordion_item1">
+                                <a href="login.html">
+                                    <li>ログイン</li>
+                                </a>
+                            </div>
+
+                            <div class="accordion_item1">
+                                <a href="user_register.html">
+                                    <li>ユーザ情報登録</li>
+                                </a>
+                            </div>
+                            <div class="accordion_item1">    
+                                <a href="product_register.html">
+                                    <li>商品登録</li>
+                                </a>
+                            </div>
+                            <div class="py-3 accordion_title2">
+                                    <li>一覧</li>
+                            </div>
+                            <div class="accordion_item2">
+                                <a href="product_list.html">
+                                    <li>商品一覧</li>
+                                </a>
+                            </div>
+                            <div class="accordion_item2">
+                                <a href="product_detail.html">
+                                    <li>商品詳細</li>
+                                </a>
+                            </div>
+                            <div class="accordion_item2">
+                                <a href="user_list.html">
+                                    <li>ユーザ一覧</li>
+                                </a>
+                            </div> 
+                            <div class="accordion_item2">
+                                <a href="user_detail.html">
+                                    <li>ユーザ情報詳細</li>
+                                </a>
+                            </div>             
+                            <div class="py-3 accordion_title3"> 
+                                    <li>パーツ</li>
+                            </div>
+                            <div  class="accordion_item3">
+                                <a href="parts/font.html">
+                                    <li>フォント</li>
+                                </a>
+                            </div>
+                            <div class="accordion_item3">
+                                <a href="parts/color.html">
+                                    <li>色</li>
+                                </a>
+                            </div>
+                            <div class="accordion_item3">
+                                <a href="parts/button.html">
+                                    <li>ボタン</li>
+                                </a>
+                            </div>
+                            <div class="accordion_item3">
+                                <a href="parts/list.html">
+                                    <li>リスト・テーブル</li>
+                                </a>
+                            </div>
+                        </ul>
+                        <div class="border-top border-white mx-3">
+                            <div class="my-3">
+                                <a href="#" class="text-decoration-none text-white">
+                                    ログアウト
+                                </a>
+                            </div>
+
+                            <div class="">
+                                <a href="#" class="text-decoration-none text-white">
+                                    マイページ
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+
+                <!-- fotter以外を横並びにするため囲む -->
+                <div class="all_wrap">
+                    
+                    <!-- ヘッダーとメインを囲む -->
+                    <div class="h-100"> 
+                        <!-- ヘッダー -->
+                        <header>
+                            <div class="header_title">
+                                <a href="home.html" class="text-decoration-none text-dark"><h1>HOME</h1></a>
+                            </div>
+
+                            <div class="header_text">
+                                サーバーメンテナンス作業2023/10/16(月)23：00～2023/10/17(火)5:00の間サービスを一時停止させていただきます。（予告なく変更する場合がございます。）
+                            </div>
+                        </header>
+
+                        <!-- メインコンテンツ -->
+                        <main>
+                            <div class="icon_wrap">
+                                <dl class="icon">
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        <dt class="icon_img">
+                                            <img src="img/memo2.png" alt="register">
+                                        </dt>
+                                        <dd>一覧</dd>
+                                    </a>
+                                </dl>
+
+                                <dl class="icon">
+                                    <a href="user_register.html" class="text-decoration-none text-dark">
+                                        <dt  class="icon_img">
+                                            <img src="img/memo.png" alt="register">
+                                        </dt>
+                                        <dd>ユーザ登録</dd>
+                                    </a>
+                                </dl>
+
+                                <dl class="icon">
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        <dt  class="icon_img">
+                                            <img src="img/note.png" alt="register">
+                                        </dt>
+                                        <dd>商品登録</dd>
+                                    </a>
+                                </dl>
+
+                                <dl class="icon">
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        <dt  class="icon_img">
+                                            <img src="img/humans.png" alt="register">
+                                        </dt>
+                                        <dd>ユーザ一覧</dd>
+                                    </a>
+                                </dl>
+
+                                <dl class="icon">
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        <dt  class="icon_img">
+                                            <img src="img/search.png" alt="register">
+                                        </dt>
+                                        <dd>検索</dd>
+                                    </a>
+                                </dl>
+
+                                <dl class="icon">
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        <dt  class="icon_img">
+                                            <img src="img/folder.png" alt="register">
+                                        </dt>
+                                        <dd>見積書</dd>
+                                    </a>
+                                </dl>
+                            </div>
+                        </main>
+                    </div>
+                    <!-- 右側ニュース -->
+                    <div class="right_news">
+                        <div class="guide_wrap">
+                            <a href="#" class="text-decoration-none text-dark">
+                                <h3 class="guide_title">初めてのご利用ガイド</h3>
+                                <p class="guide_text">便利な機能の数々をぜひご活用ください。</p>
+                            </a>
+                        </div>
+
+                        <div class="news_wrap">
+                            <h3 class="news_title">お知らせ</h3>
+                            <div class="news_contents_wrap">
+                                <div class="news_contents">         
+                                    <p>20××年○月○○日</p>
+                                    <p>長期休暇のお知らせ</p>
+                                </div>   
+                                <div class="news_contents">
+                                    <p>20××年○月○○日</p>
+                                    <p>○○サービスをリリースしました</p>
+                                </div> 
+                                <div class="news_contents">
+                                    <p>20××年○月○○日</p>
+                                    <p>長期休暇のお知らせ</p>
+                                </div>
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+
+                <!-- フッター -->
+                <footer class="position-fixed bottom-0">
+                    <div class="d-flex w-auto justify-content-end">
+                        <a href="#" class="text-decoration-none text-dark">
+                            <div class=" px-3 py-3">
+                                プライバシーポリシー
+                            </div>
+                        </a>
+                        <a href="#" class="text-decoration-none text-dark">
+                            <div class=" px-3 py-3">
+                                利用規約
+                            </div>
+                        </a>
+                    </div>
+                </footer>
+    </body>
+</html>

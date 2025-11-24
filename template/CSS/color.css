@@ -1,0 +1,770 @@
+/* パーツ＞色のスタイル */
+
+.color_box_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+/* カラーボックスサイズ */
+.color_box{
+    width: 5rem;
+    height: 5rem;
+    padding: 0.5rem;
+    font-size: clamp(10px,1vw,15px);
+}
+
+.color_link{
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+/* 青系色 */
+.midnightblue{
+    color: white;
+    background-color: #001e43;
+}
+.navy{
+    color: white;
+    background-color: navy;
+}
+.navy_blue{
+    color: white;
+    background-color: #202f55;
+}
+
+.blue{
+    color: white;
+    background-color: #0075c2;
+}
+
+.oriental_blue{
+    color: white;
+    background-color: #26499d;
+}
+
+.ruri{
+    color: white;
+    background-color: #1e50a2;
+}
+
+.madonna_blue{
+    color: white;
+    background-color: #00608d;
+}
+
+.cerulean_blue{
+    color: white;
+    background-color: #008db7;
+}
+
+.turquoise_blue{
+    color: white;
+    background-color: #00afcc;
+}
+
+.chalk_blue{
+    color: white;
+    background-color: #68a9cf;
+}
+
+.pastel_blue{
+    background-color: #89ffff;
+}
+
+.cambridge_blue{
+    color: white;
+    background-color: #25b7c0;
+}
+
+.shinbashi{
+    color: white;
+    background-color: #59b9c6;
+}
+
+.summer_shower{
+    background-color: #a1d8e2;
+}
+
+.aohuji{
+    background-color: #84a2d4;
+}
+
+.wasurenagusa{
+    background-color: #89c3eb;
+}
+
+.light_blue{
+    background-color: #b2cbe4;
+}
+
+.pastel_blue2{
+    background-color: #bcffff;
+}
+
+.konjo{
+    color: white;
+    background-color: #192f60;
+}
+
+.ai{
+    color: white;
+    background-color: #165e83;
+}
+
+.gunjo{
+    color: white;
+    background-color: #4c6cb3;
+}
+
+.konpeki{
+    color: white;
+    background-color: #007bbb;
+}
+
+.ao{
+    color: white;
+    background-color: #0095d9;
+}
+
+.ama{
+    color: white;
+    background-color: #2ca9e1;
+}
+
+.nando{
+    color: white;
+    background-color: #008899;
+}
+
+.byakugun{
+    background-color: #83ccd2;
+}
+
+.sora{
+    background-color: #a0d8ef;
+}
+
+.mizu{
+    background-color: #bce2e8;
+}
+/* 緑系色 */
+.dark_green{
+    color: white;
+    background-color: #006400;
+}
+
+.teal_green{
+    color: white;
+    background-color: #006a6c;
+}
+
+.slate_green{
+    color: white;
+    background-color: #3c7170;
+}
+
+.green{
+    color: white;
+    background-color: #00a960;
+}
+
+.cactus{
+    color: white;
+    background-color: #387d39;
+}
+
+.cobalt_green{
+    color: white;
+    background-color: #3cb37a;
+}
+
+.peacock_green{
+    color: white;
+    background-color: #00a497;
+}
+
+.meadow_green{
+    color: white;
+    background-color: #65ab31;
+}
+
+.mediumspringgreen{
+    background-color: #00fa9a;
+}
+
+.mint_green{
+    background-color: #90ee90; 
+}
+
+.apple_green{
+    background-color: #a7d28d; 
+}
+
+.spray_green{
+    background-color: #a4d5bd;
+}
+
+.water_green{
+    background-color: #a5c9c1;
+}
+
+.aqua_green{
+    background-color: #88bfbf;
+}
+
+.hukamidori{
+    color: white;
+    background-color: #00552e;
+}
+.moegi{
+    color: white;
+    background-color: #006e54;
+}
+
+.tokiwa{
+    color: white;
+    background-color: #007b43;
+}
+
+.tokiwa_midori{
+    color: white;
+    background-color: #028760;
+}
+
+.hanarokusho{
+    color: white;
+    background-color: #00a381;
+}
+
+.aomidori{
+    color: white;
+    background-color: #00a497;
+}
+
+.midori{
+    color: white;
+    background-color: #3eb370;
+}
+
+.wakatake{
+    background-color: #68be8d;
+}
+
+.usumoegi{
+    background-color: #93ca76;
+}
+
+.moeki{
+    background-color: #aacf53;
+}
+
+.wakaba{
+    background-color: #b9d08b;
+}
+.wakamidori{
+    background-color: #98d98e;
+}
+
+.usumoegi2{
+    background-color: #badcad;
+}
+
+
+.seji{
+    background-color: #7ebea5;
+}
+/* 黄色・オレンジ */
+
+.orange{
+    color: white;
+    background-color: #ee7800;
+}
+
+.marigold{
+    color: white;
+    background-color: #f39800
+}
+
+.pumpkin{
+    color: white;
+    background-color: #e5a323;
+}
+
+.golden_yellow{
+    color: white;
+    background-color: #f6ae54;
+}
+
+.saffron_yellow{
+    background-color: #fac559;
+}
+
+.peach{
+    background-color: #fbd8b5;
+}
+
+.yellow_ocher{
+    color: white;
+    background-color: #c4972f;
+}
+.straw{
+    background-color: #ece093;
+}
+.honey{
+    background-color: #fddea5;
+}
+
+.yellow{
+    background-color: #ffdc00;
+}
+
+.chrome_yellow{
+    background-color: #fcc800;
+}
+
+.gold{
+    background-color: #ffd700;
+}
+
+.mimosa{
+    background-color: #fff462;
+}
+
+.limelight{
+    background-color: #fff799;
+   
+}
+
+.cream_yellow{
+    background-color: #fff3b8;
+   
+}
+
+.syu{ 
+    color: white;
+    background-color: #eb6101;
+}
+
+.ninjin{ 
+    color: white;
+    background-color: #ec6800;
+}
+
+.daidai{
+    color: white;
+    background-color: #ee7800;
+}
+
+.kaki{ 
+    color: white;
+    background-color: #ed6d3d;
+}
+
+.mikan{
+    color: white;
+    background-color: #f08300;
+}
+
+.kouji{
+    color: white;
+    background-color: #f6ad49;
+}
+
+.anzu{
+    background-color: #f7b977;
+}
+
+.yamabuki{
+    color: white;
+    background-color: #f8b500;
+}
+
+.himawari{
+    background-color: #fcc800;
+}
+.ki{
+    background-color: #ffd900;
+}
+.kanaria{
+    background-color: #ebd842;
+}
+
+.kihada{
+    background-color: #fef263;
+}
+
+.tankou{
+    background-color: #f8e58c;
+}
+
+/* 赤/ピンク */
+.scarlet{
+    color: white;
+    background-color: #ea5532;
+}
+.red{
+    color: white;
+    background-color: #ea5550;
+}
+
+.tomato{
+    color: white;
+    background-color: #ff6347;
+   
+}
+
+.poppy_red{
+    color: white;
+    background-color: #ea5550;  
+}
+
+.strawberry{
+    color: white;
+    background-color: #e73562; 
+}
+
+.rose{
+    color: white;
+    background-color: #e95464;  
+}
+
+.rose_pink{
+    background-color: #f19ca7;  
+}
+
+.momo{
+    color: white;
+    background-color: #f09199;
+}
+.pink{
+    background-color: #f5b2b2;
+}
+
+.cherry_pink{
+    color: white;
+    background-color: #eb6ea0;
+}
+.coral_red{
+    color: white;
+    background-color: #ef857d;
+}
+
+.rosedragee{
+    background-color: #e5c1cd;
+}
+
+.pink_almond{
+    background-color: #e3acae;
+}
+
+.nadeshiko{
+    background-color: #eebbcb;
+}
+
+.pastel_pink{
+    background-color: #ffcce5;
+}
+
+.powder_pink{
+    background-color: #f5ecf4; 
+}
+
+.akane{
+    color: white;
+    background-color: #b7282e;
+}
+
+.kokihi{
+    color: white;
+    background-color: #c9171e;
+}
+
+.hiiro{
+    color: white;
+    background-color: #d3381c;
+}
+
+.aka{
+    color: white;
+    background-color: #e60033;
+}
+
+.akabeni{
+    color: white;
+    background-color: #c53d43;
+}
+
+.bara{
+    color: white;
+    background-color: #e9546b;
+}
+
+.botan{
+    color: white;
+    background-color: #e7609e;
+}
+
+.momohana{
+    background-color: #e198b4;
+}
+
+.sango{
+    background-color: #f5b1aa;
+}
+
+.maso{
+    color: white;
+    background-color: #ec6d71;
+}
+
+.chousyun{
+    color: white;
+    background-color: #c97586;
+}
+.niji{
+    background-color: #f6bfbc;
+}
+
+/* 紫 */
+.deep_royal_purple{
+    color: white;
+    background-color: #47266e;
+}
+.violet{
+    color: white;
+    background-color: #5a4498;
+}
+.plum{
+    color: white;
+    background-color: #6c2463;
+}
+.royal_purple{
+    color: white;
+    background-color: #7f1184;
+}
+
+.grape{
+    color: white;
+    background-color: #56256e;
+}
+.purple{
+    color: white;
+    background-color: #9b72b0;
+}
+
+.crocus{
+    color: white;
+    background-color: #b79fcb;
+}
+
+.lilac{
+    background-color: #d1bada;
+}
+
+.honmurasaki{
+    color: white;
+    background-color: #65318e;
+}
+
+.shoubu{
+    color: white;
+    background-color: #674196;
+}
+
+.benikikyo{
+    color: white;
+    background-color: #4d4398;
+}
+
+.hujinando{
+    color: white;
+    background-color: #706caa;
+   
+}
+
+.sumire{
+    color: white;
+    background-color: #7058a3;
+   
+}
+
+.murasaki{
+    color: white;
+    background-color: #884898;
+}
+
+.kodai_murasaki{
+    color: white;
+    background-color: #895b8a;
+}
+
+.beni_murasaki{
+    color: white;
+    background-color: #b44c97;
+}
+
+.ayame{
+    background-color: #cc7eb1;
+}
+
+.hasita{
+    background-color: #a69abd;
+}
+
+.usubudou{
+    background-color: #c0a2c7;
+}
+
+.murasaki_suisho{
+    background-color: #e7e7eb;
+}
+.mauve{
+    color: white;
+    background-color: #915da3;
+}
+
+.heliotrope{
+    color: white;
+    background-color: #9079b6;
+}
+.iris{
+    background-color: #c7a5cc;
+}
+
+.blue_lavender{
+    color: white;
+    background-color: #a4a8d4;
+}
+
+.huji{
+    color: white;
+    background-color: #a59aca;
+}
+
+.lavender{
+    background-color: #cab8d9;
+}
+.shirahuji{
+    background-color: #dbd0e6;
+}
+
+.pastel_purple{
+    background-color: #ead6ff;
+}
+
+.pastel_purple2{
+    background-color: #d6d6ff;
+}
+
+/* グレー */
+.grey{
+    color: white;
+    background-color: #7d7d7d;
+}
+
+.charcoal_grey{
+    color: white;
+    background-color: #4e454a;
+}
+
+.slate_grey{
+    color: white;
+    background-color: #626063;
+}
+
+.dove_grey{
+    color: white;
+    background-color: #7d7b83;
+}
+
+.rose_grey{
+    color: white;
+    background-color: #9d8e87;
+}
+
+.ash_grey{
+    color: white;
+    background-color: #9fa09e;
+}
+
+.french_grey{
+    color: white;
+    background-color: #8da0b6;
+}
+
+.lavender_grey{
+    color: white;
+    background-color: #bcbace;
+}
+
+.storm_grey{
+    background-color: #aaaab0;
+}
+
+.moon_grey{
+    background-color: #d4d9dc;
+}
+
+.sky_grey{
+    background-color: #cbd0d3;
+}
+
+.oyster_white{
+    background-color: #eae8e1;
+   
+}
+
+.frosty_white{
+    background-color: #e6eae6;
+   
+}
+
+.silver_white{
+    background-color: #efefef;
+   
+}
+/* マテリアルカラー */
+.color_title{
+    width: 60px;
+    margin: auto 0;
+    font-size: clamp(10px,1vw,14px);
+}
+.color_picLink{
+    text-decoration: none;
+    color: inherit;
+}
+
+.color_picLink:hover{
+    color: rgb(30, 136, 229);
+}
+
+.color_type_m{
+    display: flex;
+}
+
+.material{
+    width: 100%;
+    margin: 2rem 0 4rem 1.5rem; 
+}
+
+@media screen and (min-width:1000px){
+    /* マテリアルカラーボックスサイズ */
+    .color_box_m{
+        width: 60px;
+        height: 60px;
+    }
+
+}
+
+@media screen and (max-width:1000px){
+    /* マテリアルカラーボックスサイズ */
+    .color_box_m{
+        width: 40px;
+        height: 40px;
+    }
+
+}
+
+ 

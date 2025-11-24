@@ -1,0 +1,81 @@
+/* パーツ＞フォントのスタイル */
+.table{
+    margin: 2rem auto;
+}
+.serif{
+    /* 明朝体 */
+    font-family: serif;
+}
+
+.yumincho{
+    /* 游明朝 */
+    font-family :
+	YuMincho,    /* Mac用 */
+	'Yu Mincho', /* Windows用 */
+	serif;
+}
+
+.yumincho{
+    /* MS明朝 */
+    font-family :"MS Mincho","ＭＳ 明朝",serif;
+}
+
+.hiraginomincho{
+    font-family:"ヒラギノ明朝 ProN","Hiragino Mincho Pro",serif;
+}
+
+.gothic{
+    /* ゴシック */
+    font-family: sans-serif;
+}
+.yugothic{
+    /* 游ゴシック */
+    font-family:"游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+.hiragino_gothic{
+    /*ヒラギノ角ゴシック  */
+    font-family:"Hiragino Sans", "ヒラギノ角ゴシック";
+}
+
+.meiryo{
+    /* メイリオ */
+    font-family:"Meiryo", "メイリオ";
+}
+
+.arial{
+    /* アリアル */
+    font-family:Arial;
+}
+
+.helvetica{
+    /*ヘルベチカ */
+    font-family:"Helvetica";
+}
+
+.helvetica_n{
+    /*ヘルベチカ・ノイエ */
+    font-family:"Helvetica Neue";
+}
+
+.segoeUI{
+    /* シーゴ */
+    font-family:"Segoe UI";
+}
+
+.cursive{
+    /* 筆記体 */
+    font-family:cursive;
+}
+
+.fantasy{
+    /* ファンタジー */
+    font-family:fantasy;
+}
+
+@media screen and (min-width: 768px){
+    .table_wrap{
+        display: flex;
+    }
+}
+

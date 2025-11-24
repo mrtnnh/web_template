@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <!-- CSS -->
+        <link href="../CSS/style.css" rel="stylesheet"  type="text/css">
+        <link href="../CSS/font.css" rel="stylesheet"  type="text/css">
+        <!-- JS -->
+        <script src="../js/script.js"></script>
+    </head>
+    <body class="w-auto h-auto">
+        <!-- Side Navbar-->
+        <div class="sidebar">
+            <nav class="navbar-dark h-100 d-flex flex-column text-white">
+                <!-- 会社名、ロゴ等 -->
+                <div class="company_logo">
+                    <img src="../img/company_logo.png" alt="companyLogo">
+                </div>
+
+                <div class=" h-100">
+                    <ul class="sidebar_contents flex-column mb-auto">
+                        <div class="py-3">
+                            <a href="../home.html">
+                                <li>HOME</li>
+                            </a>
+                        </div>
+                        
+                        <div class="py-3 accordion_title1"> 
+                            <li >登録</li>
+                        </div>
+                        
+                        <div class="accordion_item1">
+                            <a href="../login.html">
+                                <li>ログイン</li>
+                            </a>
+                        </div>
+
+                        <div class="accordion_item1">
+                            <a href="../user_register.html" >
+                                <li>ユーザ情報登録</li>
+                            </a>
+                        </div>
+                        <div class="accordion_item1">    
+                            <a href="../product_register.html">
+                                <li>商品登録</li>
+                            </a>
+                        </div>
+                        <div class="py-3 accordion_title2">
+                                <li>一覧</li>
+                        </div>
+                        <div class="accordion_item2">
+                            <a href="../product_list.html">
+                                <li>商品一覧</li>
+                            </a>
+                        </div>
+                        <div class="accordion_item2">
+                            <a href="../product_detail.html">
+                                <li>商品詳細</li>
+                            </a>
+                        </div>
+                        <div class="accordion_item2">
+                            <a href="../user_list.html">
+                                <li>ユーザ一覧</li>
+                            </a>
+                        </div>   
+                        <div class="accordion_item2">
+                            <a href="../user_detail.html">
+                                <li>ユーザ一覧</li>
+                            </a>
+                        </div>            
+                        <div class="py-3 accordion_title3"> 
+                                <li>パーツ</li>
+                        </div>
+                        <div  class="accordion_item3">
+                            <a href="font.html">
+                                <li>フォント</li>
+                            </a>
+                        </div>
+                        <div  class="accordion_item3">
+                            <a href="color.html">
+                                <li>色</li>
+                            </a>
+                        </div>
+                        <div  class="accordion_item3">
+                            <a href="button.html">
+                                <li>ボタン</li>
+                            </a>
+                        </div>
+                        <div  class="accordion_item3">
+                            <a href="list.html">
+                                <li>リスト・テーブル</li>
+                            </a>
+                        </div>
+                    </ul>
+                
+                    <div class="border-top border-white mx-3">
+                        <div class="my-3">
+                            <a href="#" class="text-decoration-none text-white">
+                                ログアウト
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="#" class="text-decoration-none text-white">
+                                マイページ
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+            
+        <!-- ナビ以外すべて囲む -->
+        <div class="all_wrap">
+            <!-- ヘッダー -->
+            <header>
+                <div class="header_title">
+                    <a href="user_register.html" class="text-decoration-none text-dark"><h1>フォント</h1></a>  
+                </div>
+            </header>
+
+            <div class="table_wrap mt-3">
+                <div class="me-5">
+                    <h2 class="mb-3">日本語フォント</h2>
+                    <table class="table d-flex ">
+                        <tbody>
+                            <tr>
+                                <!-- 本文で使用することが多い -->
+                                <th class="serif">明朝体</th>
+                                <td class="serif">あいうえおアイウエオ</td>
+                            </tr>
+                            <tr>
+                                <!-- 見出しやタイトルに適している -->
+                                <th class="yumincho">游明朝体</th>
+                                <td class="yumincho">あいうえおアイウエオ</td>
+                            </tr>
+                            <tr>
+                                <!-- MicrosoftのWordに利用 -->
+                                <th class="msmincho">MS明朝体</th>
+                                <td class="msmincho">あいうえおアイウエオ</td>
+                            </tr>
+                            <tr>
+                                <!-- 都会的でシャープな作りになっている明朝体。写真やイラストにも対応している -->
+                                <th class="hiraginomincho">ヒラギノ明朝体</th>
+                                <td class="hiraginomincho">あいうえおアイウエオ</td>
+                            </tr>
+                            <tr>
+                                <!-- タイトルで使われることが多い -->
+                                <th class="gothic">ゴシック体</th>
+                                <td class="gothic">あいうえおアイウエオ</td>
+                            </tr>
+                            <tr>
+                                <!-- 長文でも読みやすいスタンダードなゴシック体 -->
+                                <th class="yugothic">游ゴシック</th>
+                                <td class="yugothic">あいうえおアイウエオ</td>
+                            </tr>
+                            <tr>
+                                <!-- iOSに標準搭載されているフォント -->
+                                <th class="hiragino_gothic">ヒラギノ角ゴシック</th>
+                                <td class="hiragino_gothic">あいうえおアイウエオ</td>
+                            </tr>
+                            <tr>
+                                <!-- 丸みのあるフォントと硬い雰囲気のバランスが良く、プレゼン資料に適している -->
+                                <th class="meiryo">メイリオ</th>
+                                <td class="meiryo">あいうえおアイウエオ</td>
+                            </tr>
+                        </tbody>  
+                    </table> 
+                </div>
+                <div>
+                    <h2 class="mb-3">英語フォント</h2>
+                    <table class="table d-flex ">
+                    <tbody>
+                        <tr>
+                            <!-- サンセリフ体の欧文フォントで、WindowsとiOS双方で利用可能 -->
+                            <th class="arial">Arial（アリアル）</th>
+                            <td class="arial">ABCDEFabcdef</td>
+                        </tr>
+                        <tr>
+                            <!-- 世界中の空港や広告で利用されている -->
+                            <th class="helvetica">Helvetica（ヘルベチカ）</th>
+                            <td class="helvetica">ABCDEFabcdef</td>
+                        </tr>
+                        <tr>
+                            <!-- Helveticaをより読みやすくするために改良された欧文フォント -->
+                            <th class="helvetica_n">Helvetica Neue（ヘルベチカ・ノイエ）</th>
+                            <td class="helvetica_n">ABCDEFabcdef</td>
+                        </tr>
+                        <tr>
+                            <!-- マイクロソフトのオフィスであるOutlookの文字フォントとして利用されている -->
+                            <th class="segoeUI">Segoe UI（シーゴ）</th>
+                            <td class="segoeUI">ABCDEFabcdef</td>
+                        </tr>
+                        <tr>
+                            <!-- 筆記体 -->
+                            <th class="cursive">cursive（筆記体）</th>
+                            <td class="cursive">ABCDEFabcdef</td>
+                        </tr>
+                        <tr>
+                            <!-- 筆記体 -->
+                            <th class="fantasy">Fantasy</th>
+                            <td class="fantasy">ABCDEFabcdef</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- フッター -->
+        <footer class="position-fixed bottom-0">
+            <div class="d-flex w-auto justify-content-end">
+                <div class=" px-3 py-3">
+                    プライバシーポリシー
+                </div>
+                <div class=" px-3 py-3">
+                    利用規約
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

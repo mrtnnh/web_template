@@ -1,0 +1,815 @@
+/* パーツ＞リストのスタイル */
+
+/* 先頭が四角のリスト */
+ol.list1{
+    width: 200px;
+    counter-reset:list;
+    list-style-type:none;
+    font: 14px/1.6 'arial narrow', sans-serif;
+    padding: 0px;
+    border: solid 1px #F6A38B;
+   margin: 0 0.5rem 0 0;
+  }
+    
+  ol.list1 li{
+    position:relative;
+    line-height: 30px;
+    margin: 7px 0 7px 40px;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size:14px;
+  }
+    
+  ol.list1 li:before{
+    counter-increment: list;
+    content: counter(list);
+    position: absolute;
+    left: -35px;
+    width: 30px;
+    height: 30px;
+    background: #F6A38B;
+    text-align: center;
+    color: #fff;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  /* 先頭がひし形 */
+  ol.list2{
+    width: 200px;
+    counter-reset:list;
+    list-style-type:none;
+    font: 14px/1.6 'arial narrow', sans-serif;
+    padding: 0px;
+   margin: 0 0.5rem 0 0;
+    border: solid 1px #F6A38B;
+  }
+  ol.list2 li{
+    position:relative;
+    line-height: 30px;
+    margin: 7px 0 7px 40px;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size:14px;
+  }
+   ol.list2 li:before{
+    counter-increment: list;
+    content: counter(list);
+    position: absolute;
+    top: 0;
+    left: -35px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: #fff;
+    line-height:30px;
+     z-index:1;
+  }
+  ol.list2 li:after{
+    content:"";
+    position: absolute;
+    top: 3px;
+    left: -32px;
+    width: 25px;
+    height: 25px;
+    background: #F6A38B;
+    color: #fff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* 先頭が丸 */
+ol.list3{
+    width: 200px;
+    counter-reset:list;
+    list-style-type:none;
+    font: 14px/1.6 'arial narrow', sans-serif;
+    padding:0;
+   margin: 0 0.5rem 0 0;
+    border: solid 1px #F6A38B;
+  }
+  ol.list3 li{
+    position:relative;
+    padding: 0 0 0 30px;
+    margin: 7px 0 7px 10px;
+    font-weight: bold;
+    font-size:14px;
+    line-height: 29px;
+    border: dashed 1px transparent;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
+  }
+  ol.list3 li:before{
+    counter-increment: list;
+    content: counter(list);
+    position: absolute;
+    left: -10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: #fff;
+    line-height:30px;
+    background: #F6A38B;
+    border-radius: 50%;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  ol.list3 li:hover{
+    border-bottom-color: #F6A38B;
+  }
+
+  /* リスト項目全体を角丸に */
+  ol.list4{
+    width: 200px;
+    counter-reset:list;
+    list-style-type:none;
+    font: 14px/1.6 'arial narrow', sans-serif;
+    padding:0;
+   margin: 0 0.5rem 0 0;
+  }
+  ol.list4 li{
+    position:relative;
+    margin: 7px 0 7px 0px;
+    padding-left:40px;
+    font-weight: bold;
+    font-size:14px;
+    line-height: 30px;
+    border: solid 1px #F6A38B;
+    border-radius:20px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
+  }
+  ol.list4 li:before{
+    counter-increment: list;
+    content: counter(list);
+    position: absolute;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: #fff;
+    line-height:30px;
+    background: #F6A38B;
+    border-radius: 50%;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  ol.list4 li:hover{
+    background: #F6A38B;
+    color: #fff;
+  }
+  ol.list4 li:hover:before{
+    background: #fff;
+    color: #F6A38B;
+  }
+
+  /* 四角に下線を付けたリスト */
+  ol.list5{
+    width: 200px;
+    counter-reset:list;
+    list-style-type:none;
+    font: 14px/1.6 'arial narrow', sans-serif;
+    padding: 0;
+   margin: 0 0.5rem 0 0;
+  }
+  ol.list5 li{
+    position:relative;
+    line-height: 30px;
+    margin: 7px 0 10px 30px;
+    padding-left:10px;
+    font-weight: bold;
+    font-size:14px;
+    border-bottom:solid 1px #F6A38B;
+  }
+  ol.list5 li:before{
+    counter-increment: list;
+    content: counter(list);
+    position: absolute;
+    left: -30px;
+    width: 30px;
+    height: 32px;
+    background: #F6A38B;
+    text-align: center;
+    color: #fff;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  /* 吹き出しをくっつけたタイプ */
+  ol.list6{
+    width: 200px;
+    counter-reset:list;
+    list-style-type:none;
+    font: 14px/1.6 'arial narrow', sans-serif;
+    padding:0;
+   margin: 0 0.5rem 0 0;
+  }
+  ol.list6 li{
+    position:relative;
+    margin: 7px 0 7px 0px;
+    padding-left:43px;
+    font-weight: bold;
+    font-size:16px;
+    line-height: 30px;
+    border: 2px solid #756C67;
+    color: #756C67;
+  }
+  ol.list6 li:before{
+    counter-increment: list;
+    content: counter(list);
+    position: absolute;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: #fff;
+    line-height:30px;
+    background: #756C67;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  ol.list6 li:after{
+    content:"";
+    display: block;
+    position: absolute;
+    left: 30px;
+    height: 0;
+    width: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 7px solid #756C67;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  /* 先頭丸に下線（点線）をつけたデザイン */
+  ol.list7{
+    width: 200px;
+    counter-reset:list;
+    list-style-type:none;
+    font: 14px/1.6 'arial narrow', sans-serif;
+    padding:0;
+    margin: 0 0.5rem 0 0;
+  }
+  ol.list7 li{
+    position:relative;
+    padding: 0 0 3px 30px;
+    margin: 7px 0 7px 10px;
+    font-weight: bold;
+    font-size:14px;
+    line-height: 29px;
+    border: dashed 1px transparent;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
+    border-bottom: dotted 1px #756C67;
+  }
+  ol.list7 li:before{
+    counter-increment: list;
+    content: counter(list);
+    position: absolute;
+    left: -10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: #fff;
+    line-height:30px;
+    background: #756C67;
+    border-radius: 50%;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  ol.list7 li:hover{
+    border-bottom-color: #F6A38B;
+  }
+
+  /* 番号なし先頭三角 */
+  ol.list8{
+    width: 200px;
+    counter-reset:list;
+    list-style-type:none;
+    font: 14px/1.6 'arial narrow', sans-serif;
+    padding:0;
+    margin: 0 0.5rem 0 0;
+  }
+  ol.list8 li{
+    position:relative;
+    padding: 0 0 0 20px;
+    margin: 7px 0 7px 0px;
+    font-weight: bold;
+    font-size:14px;
+    line-height: 30px;
+    border-bottom: dashed 1px #756C67;
+  }
+  ol.list8 li:before{
+    counter-increment: list;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0px;
+    height: 0;
+    width: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 7px solid #756C67;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  /* 角丸+マウスオーバーで色変化 */
+  ol.list9{
+    width: 200px;
+    counter-reset:list;
+    list-style-type:none;
+    font: 14px/1.6 'arial narrow', sans-serif;
+    padding:0;
+    margin: 0 0.5rem 0 0;
+  }
+  ol.list9 li{
+    position:relative;
+    color: #fff;
+    padding: 0 0 0 30px;
+    margin: 7px 0 7px 0px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 30px;
+    background: #77b4fd;
+    border-radius: 20px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
+  }
+  ol.list9 li:before{
+    counter-increment: list;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 10px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #fff;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  ol.list9 li:hover{
+    background: #8393ca;
+  }
+
+  /* 付箋風 */
+  .list10{
+    padding: 0;
+    font: 14px/1.6 'arial narrow', sans-serif;
+    width:200px;
+    list-style: none;
+    margin: 0 0.5rem 0 0;
+  }
+  .list10 li{
+    position: relative;
+    padding: 7px 5px 7px 10px;
+    margin-bottom:5px;
+    border-left: solid 5px #5c9ee7;
+    background: #f1f8ff;
+    color: #5c9ee7;
+    font-weight: bold;
+    -webkit-box-shadow:1px 1px 2px rgba(0, 0, 0, 0.1) ;
+    -moz-box-shadow:1px 1px 2px rgba(0, 0, 0, 0.1) ;
+    box-shadow:1px 1px 2px rgba(0, 0, 0, 0.1) ;
+  }
+
+  /* 先頭丸が重なっている */
+  ul.list11{
+    padding: 0;
+    font: 14px/1.6 'arial narrow', sans-serif;
+    width:200px;
+    list-style: none;
+    margin: 0 0.5rem 0 0;
+  }
+  ul.list11 li{
+    position: relative;
+    padding: 0.3rem 0rem 0.3rem 2rem;
+    margin-bottom:5px;
+    color: rgb(129,194,250);
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(129,194,250, 0.5);
+  }
+  ul.list11 li:after,
+  ul.list11 li:before{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+  }
+  ul.list11 li:before{
+    left: 0.2em;
+    width: 17px;
+    height: 17px;
+    background: rgba(129,194,250,0.5);
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  ul.list11 li:after{
+    top: 1.1em;
+    left: 0.7em;
+    width: 14px;
+    height: 14px;
+    background: rgba(129,194,250,0.3);
+  }
+
+  /* すだれひし形 */
+  ul.list12{
+    width: 200px;
+    padding: 0;
+    font: 14px/1.6 'arial narrow', sans-serif;
+    width:200px;
+    list-style: none;
+    margin: 0 0.5rem 0 0;
+  }
+  ul.list12 li{
+    position: relative;
+    padding: 0.3rem 1rem 0.3rem 2.3rem;
+    margin-bottom:5px;
+    color: rgb(129,194,250);
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(129,194,250, 0.5);
+  }
+  ul.list12 li:after,
+  ul.list12 li:before{
+    content: "";
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  ul.list12 li:before{
+    top: 0.7em;
+    left: 0.2em;
+    width: 12px;
+    height: 12px;
+    border:2px solid rgba(129,194,250,0.5);
+  }
+  ul.list12 li:after{
+    top: 0.9em;
+    left: 0.7em;
+    width: 14px;
+    height: 14px;
+    background: rgba(129,194,250,0.3);
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    transform: rotate(60deg);
+  }
+
+  /* カラフルなリスト */
+  ul.list13{
+    width: 200px;
+    counter-reset:li;
+    font: 14px/1.6 'arial narrow', sans-serif;
+    list-style: none;
+    padding:0;
+    margin: 0 0.5rem 0 0;
+  }
+  ul.list13 li{
+    position: relative;
+    font-weight: bold;
+    line-height: 28px;
+    margin: 0.5rem 0;
+    padding-left: 40px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
+  }
+  ul.list13 li:nth-child(4n+1){
+    border:dashed 1px #FFA79F;
+  }
+  ul.list13 li:nth-child(4n+2){
+    border:dashed 1px #fbaf5d;
+  }
+  ul.list13 li:nth-child(4n+3){
+    border:dashed 1px #9FCDFF;
+  }
+  ul.list13 li:nth-child(4n+4){
+    border:dashed 1px #AFEBB6;
+  }
+  ul.list13 li:before{
+    counter-increment: li;
+    content: counter(li);
+    position: absolute;
+    left: -1px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  ul.list13 li:nth-child(4n+1):before{
+    background: #FFA79F;
+  }
+  ul.list13 li:nth-child(4n+2):before{
+    background: #fbaf5d;
+  }
+  ul.list13 li:nth-child(4n+3):before{
+    background: #9FCDFF;
+  }
+  ul.list13 li:nth-child(4n+4):before{
+    background: #AFEBB6;
+  }
+  ul.list13 li:hover{
+    color:#fff;
+    overflow: hidden;
+    z-index: 1;
+  }
+  ul.list13 li:nth-child(4n+1):hover{
+    background: #FFA79F;
+  }
+  ul.list13 li:nth-child(4n+1):hover:before{
+    background: #fff;
+    color: #FFA79F;
+  }
+  ul.list13 li:nth-child(4n+2):hover{
+    background: #fbaf5d;
+  }
+  ul.list13 li:nth-child(4n+2):hover:before{
+    background: #fff;
+    color: #fbaf5d;
+  }
+  ul.list13 li:nth-child(4n+3):hover{
+    background: #9FCDFF;
+  }
+  ul.list13 li:nth-child(4n+3):hover:before{
+    background: #fff;
+    color: #9FCDFF;
+  }
+  ul.list13 li:nth-child(4n+4):hover{
+    background: #AFEBB6;
+  }
+  ul.list13 li:nth-child(4n+4):hover:before{
+    background: #fff;
+    color: #AFEBB6;
+  }
+
+  /* テーブル */
+  /* シンプルな枠線 */
+  .table1 {
+    width: 400px;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+   }
+   .table1 th {
+    padding: 10px;
+    background: #e9faf9;
+    border: solid 1px #778ca3;
+   }
+   .table1 td {
+    padding: 10px;
+    border: solid 1px #778ca3;
+   }
+
+   /* 横線に破線を使用したデザイン */
+   .table2 {
+    width: 400px;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: solid 1px #778ca3;
+   }
+   .table2 tr {
+    border-top: dashed 1px #778ca3;
+   }
+   .table2 th {
+    padding: 10px;
+    background: #e9faf9;
+   }
+   .table2 td {
+    padding: 10px;
+   }
+
+   /* １行おきの背景色と横線を使ったデザイン */
+   .table3 {
+    width: 400px;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-top: solid 1px #778ca3;
+   }
+   .table3 tr:nth-child(2n+1) {
+    background: #e9faf9;
+   }
+   .table3 th,
+   .table3 td {
+    padding: 10px;
+    border-bottom: solid 1px #778ca3;
+   }
+
+   /* １行おきの背景色と縦線を使ったデザイン */
+   .table4 {
+    width: 400px;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+   }
+   .table4 tr:nth-child(2n+1) {
+    background: #e9faf9;
+   }
+   .table4 th {
+    padding: 10px;
+    background: #778ca3;
+    border-right: solid 1px #778ca3;
+    color: #ffffff;
+   }
+   .table4 th:last-child {
+    border-right: none;
+   }
+   .table4 td {
+    padding: 10px;
+    border-right: solid 1px #778ca3; 
+   }
+   .table4 td:last-child {
+    border-right: none;
+   }
+
+   /* 見出し項目を上と左に入れたデザイン */
+   .table5 {
+    width: 400px;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+   }
+   .table5 th {
+    padding: 10px;
+    background: #778ca3;
+    border: solid 1px #666666;
+    color: #ffffff;
+   }
+   .table5 td {
+    padding: 10px;
+    border: solid 1px #666666;
+   }
+   .table5 td:first-child {
+    background: #778ca3;
+   }
+
+   /* 点線を組み合わせたテーブル */
+   .table6 {
+    width: 400px;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: solid 2px #778ca3;
+   }
+   .table6 th {
+    padding: 10px;
+    background: #e9faf9;
+    border: solid 1px #778ca3;
+    border-bottom: solid 2px #778ca3;
+   }
+   .table6 td {
+    padding: 10px;
+    border-left: solid 1px #778ca3;
+   }
+   .table6 tr {
+    border-top: dashed 1px #778ca3;
+   }
+
+   /* 枠線と背景色を入れたデザイン */
+   .table7 {
+    width: 400px;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: solid 3px #778ca3;
+   }
+   .table7 th {
+    padding: 10px;
+    border: solid 1px #778ca3;
+    background: #778ca3;
+    color: #ffffff;
+   }
+   .table7 td {
+    padding: 10px;
+    border: solid 1px #778ca3;
+    background: #e9faf9;
+   }
+
+   /* １行おきに異なる背景色を入れたデザイン */
+   .table8 {
+    width: 400px;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background: #cdf4f0;
+   }
+   .table8 tr:nth-child(2n+1) {
+    background: #e9faf9;
+   }
+   .table8 th {
+    padding: 10px;
+    border: solid 1px #ffffff;
+    background: #778ca3;
+    color: #ffffff;
+   }
+   .table8 td {
+    padding: 10px;
+    border: solid 1px #ffffff;
+   }
+
+   /* 列ごとに異なる背景色を使ったデザイン */
+   .table9 {
+    width: 400px;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+   }
+   .table9 th {
+    padding: 10px;
+    border: solid 1px #ffffff;
+   }
+   .table9 th:nth-child(1) {
+    background: #fd9644;
+   }
+   .table9 th:nth-child(2) {
+    background: #fed330;
+   }
+   .table9 th:nth-child(3) {
+    background: #26de81;
+   }
+   .table9 td {
+    padding: 10px;
+    border: solid 1px #ffffff;
+   }
+   .table9 td:nth-child(1) {
+    background: #fec598;
+   }
+   .table9 td:nth-child(2) {
+    background: #fee585;
+   }
+   .table9 td:nth-child(3) {
+    background: #70e9ac;
+   }

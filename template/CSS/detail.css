@@ -1,0 +1,21 @@
+/* 一覧画面から飛ぶ詳細画面 */
+.main_wrap{
+    width: auto;
+    margin: 3rem auto;
+}
+
+.product_photo_wrap{
+    display: flex
+}
+
+.product_photo{
+    width: 30%;
+    border: solid 1px #212529;
+    padding: 1rem;
+    margin: 0 1rem;
+    display: flex;
+}
+
+.product_photo img{
+    width: 100%;
+}
